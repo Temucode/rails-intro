@@ -1,0 +1,16 @@
+<h1>Answer</h1>
+
+  <p>
+    <% if @question.blank? %>
+      empty
+    <% else %>
+      <%= @question %>
+    <% end %>
+  </p>
+  <cite>You</cite>
+
+  <p><%= @answer %></p>
+  <cite>Your coach</cite>
+
+
+<%= link_to "return", ask_path%>
