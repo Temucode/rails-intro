@@ -1,16 +1,19 @@
-<h1>Answer</h1>
+<div class="container">
+  <h1>Answer</h1>
 
-  <p>
-    <% if @question.blank? %>
-      empty
-    <% else %>
-      <%= @question %>
-    <% end %>
-  </p>
-  <cite>You</cite>
-
-  <p><%= @answer %></p>
-  <cite>Your coach</cite>
+        <p>
+          <% if @question.blank? %>
+            empty
+          <% else %>
+            <%= @question %>
+          <% end %>
+        </p>
+        <cite>You</cite>
 
 
-<%= link_to "return", ask_path%>
+
+        <p><%= @answer %></p>
+        <cite>Your coach</cite>
+      <br>
+  <%= link_to "Ask a new question", ask_path%>
+</div>
